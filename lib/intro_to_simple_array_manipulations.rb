@@ -1,8 +1,11 @@
+require 'pry'
 def using_push(colors_in_skittles_pack, next_color)
   colors_in_skittles_pack = ["green", "orange", "yellow", "red", "blue"]
   next_color = "violet"
+  binding pry
   colors_in_skittles_pack.push(next_color)
 end
+binding pry
 
 def using_unshift(neighborhoods_in_northwest_brooklyn, new_neighborhood)
   neighborhoods_in_northwest_brooklyn = ["Brooklyn Yards", "Cadman Plaza", "Downtown Brooklyn", "DUMBO"]
@@ -11,7 +14,7 @@ def using_unshift(neighborhoods_in_northwest_brooklyn, new_neighborhood)
 end
 
 def using_pop(great_hits_of_the_nineties)
-  @great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Hard Knock Life", "Losing My Religion"]
+  @great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Hard Knock Life", "Losinglearn My Religion"]
      @deleted_string = using_pop(@great_hits_of_the_nineties)
   
 def pop_with_args (array)
